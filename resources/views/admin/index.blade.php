@@ -8,7 +8,7 @@
 </div>
 
 
-   <center><h1 >Admin Panel</h1></center>
+   <center><h1 >Admin Panel Home</h1></center>
 <h2>Welcome to Taxi App</h2>
 
 
