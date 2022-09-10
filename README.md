@@ -1,6 +1,5 @@
 # TaxiApp
-<h2>TaxiApp</h2>
-<img src="taxi.jpng">
+<img src="taxi.jpg">
 <h3>A Web-Based Application to Connect TaxiApp to facilite transportation <h3>
 
 # Overview
@@ -14,14 +13,11 @@ This is a simple taxi app system. When there is need of taxi, we have to select 
 
 
 
-- **Driver** It includes the place , how much he needs a units and Case is Finish or not.
-
-- **MAP** GMap , Pins , Calculation to neartest Blood Donation Centers.
-
+- **Driver** 
 - **QE Code** For Every Profile 
 
 - **Sending Email Notification** After request submitted
-- **Only Client**  can See The Same request of
+
 
 Requirements
 ------------------
@@ -39,7 +35,7 @@ Installation
 3. Run php artisan serve  
 4. Visit the website in your browser.
 5. Go to Login/Register.
-6. Sign in as Doner / Recipient 
+6. Sign in client/driver
 7. UnFinished Cases
 8. Finished Cases
 9. Qr Code 
