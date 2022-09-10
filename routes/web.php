@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\clientController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 /*
@@ -25,3 +26,6 @@ Route::get('/admin', function () {
     return view('admin.index');
 });
 Route::get('/show',[Controller::class, 'index']);
+
+Route::get('/client-info', [clientController::class, 'index']);
+Route::post('storeC',[clientController::class, 'storeC']);
