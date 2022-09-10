@@ -1,6 +1,6 @@
 # TaxiApp
 <h2>TaxiApp</h2>
-<img src="taxi.jpeg">
+<img src="taxi.jpg">
 <h3>A Web-Based Application to Connect TaxiApp to facilite transportation <h3>
 
 # Overview
