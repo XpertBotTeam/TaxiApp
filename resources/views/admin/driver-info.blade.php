@@ -5,7 +5,7 @@
         <div class="col-md-8">
             <div class="card" style="text-align:center">
                 <div class="card-header">
-                    <h4 class="card-title" style="text-align:center">Welcome to Client Registration Page</h4>
+                    <h4 class="card-title" style="text-align:center">Welcome to Driver Registration Page</h4>
                 </div>
                 <div class="card-header">
                     <h4 class="card-title" style="text-align:center">Please Fill the Following Form</h4>
@@ -23,14 +23,14 @@
                         </div>
                     @endif
 
-                    <form action="storeC" method="POST">
+                    <form action="storeD" method="POST">
                         @csrf
 
                         <div class="form-group" style="text-align:center">
-                            <input type="string" style="text-align:center" name="client_name" class="form-control"
+                            <input type="string" style="text-align:center" name="driver_name" class="form-control"
                                 placeholder="Enter Your Full Name">
                             <span style="color:red">
-                                @error('client_name')
+                                @error('driver_name')
                                     {{ $message }}
                                 @enderror
                             </span>
@@ -45,10 +45,60 @@
                                 @enderror
                             </span>
                         </div>
+                        <div class="form-group">
+                            <label for="gender">Your Gender:</label>
+                            <select id="gender" name="gender">
+                                <option value=""></option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <span style="color:red">
+                                @error('gender')
+                                    {{ $message }}
+                                @enderror
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="car_model">Choose your car Model </label>
+                            <select id="car_model" name="car_model">
+                                <option value=""></option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="bmw">BMW</option>
+                                <option value="kia">Kia</option>
+                                <option value="nissan">Nissan</option>
+                            </select>
+                            <span style="color:red">
+                                @error('car_model')
+                                    {{ $message }}
+                                @enderror
+                            </span>
+                        </div>
+
 
                         <div class="form-group">
-                            <label for="destination">Choose your Destination</label>
-                            <select id="destination" name="destination">
+                            <label for="color">Choose your car color </label>
+                            <select id="color" name="color">
+                                <option value=""></option>
+                                <option value="red">red</option>
+                                <option value="gray">gray</option>
+                                <option value="white">white</option>
+                                <option value="blue">blue</option>
+                                <option value="green">green</option>
+                                <option value="black">black</option>
+                                <option value="yellow">yellow</option>
+                                <option value="pink">pink</option>
+                            </select>
+                            <span style="color:red">
+                                @error('color')
+                                    {{ $message }}
+                                @enderror
+                            </span>
+                        </div>
+
+             
+                        <div class="form-group">
+                            <label for="location">Choose your Location</label>
+                            <select id="location" name="location">
                                 <option value=""></option>
                                 <option value="Saida">Saida</option>
                                 <option value="Beirut">Beirut</option>
@@ -69,57 +119,7 @@
                                 @enderror
                             </span>
                         </div>
-                        <div class="form-group">
-                            <label for="location">Choose your Location</label>
-                            <select id="location" name="location">
-                                <option value=""></option>
-                                <option value="Saida">Saida</option>
-                                <option value="Beirut">Beirut</option>
-                                <option value="Tripoli">Tripoli</option>
-                                <option value="Tyre">Tyre</option>
-                                <option value="Jounieh">Jounieh</option>
-                                <option value="Byblos">Byblos</option>
-                                <option value="Aley">Aley</option>
-                                <option value="Nabatieh">Nabatieh</option>
-                                <option value="Baalbek">Baalbek</option>
-                                <option value="Batroun">Batroun</option>
-                                <option value="Zgharta-Ehden">Zgharta-Ehden</option>
-
-                            </select>
-                            <span style="color:red">
-                                @error('destination')
-                                    {{ $message }}
-                                @enderror
-                            </span>
-                        </div>
-
-
-
-
-
-
-
-                        <div class="form-group">
-                            <label for="gender">Your Gender:</label>
-                            <select id="gender" name="gender">
-                                <option value=""></option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
-                            <span style="color:red">
-                                @error('gender')
-                                    {{ $message }}
-                                @enderror
-                            </span>
-                        </div>
-
-
-
-
-
-
-
-
+                        
 
 
 

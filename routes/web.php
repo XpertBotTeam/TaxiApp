@@ -3,6 +3,7 @@
 use App\Http\Controllers\clientController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\driverController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,3 +30,6 @@ Route::get('/show',[Controller::class, 'index']);
 
 Route::get('/client-info', [clientController::class, 'index']);
 Route::post('storeC',[clientController::class, 'storeC']);
+
+Route::get('/driver-info', [driverController::class, 'index']);
+Route::post('storeD',[driverController::class, 'storeD']);
