@@ -14,7 +14,6 @@ This is a simple taxi app system. When there is need of taxi, we have to select 
 
 
 - **Driver** 
-- **QE Code** For Every Profile 
 
 - **Sending Email Notification** After request submitted
 
