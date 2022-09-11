@@ -103,13 +103,15 @@
         <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href={{ asset('logout') }}>Logout</a>
+
             <a class="collapse-item" href={{ asset('admin') }}>Admin Panel</a>
-            <a class="collapse-item" href={{ asset('show') }}>Show user</a>
+
             <div class="collapse-divider"></div>
-            <a class="collapse-item" href={{ asset('client-info') }}> Client regitration</a>
-            <a class="collapse-item" href={{ asset('map') }}>MAP</a>
-            <a class="collapse-item active" href="blank.html">Blank Page</a>
+            <a class="collapse-item" href={{ asset('driver-info') }}>Driver Registration</a>
+            <a class="collapse-item" href={{ asset('client-info') }}> Client Registration</a>
+            <a class="collapse-item" href={{ asset('trip') }}>Trip Driver</a>
+            <a class="collapse-item" href={{ asset('map') }}>Map</a>
+
           </div>
         </div>
       </li>

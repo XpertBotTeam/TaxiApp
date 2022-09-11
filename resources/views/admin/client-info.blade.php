@@ -16,16 +16,13 @@
                             {{ Session::get('success') }}
                         </div>
                     @endif
-
                     @if (Session::get('fail'))
                         <div class="alret alert-danger">
                             {{ Session::get('fail') }}
                         </div>
                     @endif
-
                     <form action="storeC" method="POST">
                         @csrf
-
                         <div class="form-group" style="text-align:center">
                             <input type="string" style="text-align:center" name="client_name" class="form-control"
                                 placeholder="Enter Your Full Name">
@@ -35,7 +32,6 @@
                                 @enderror
                             </span>
                         </div>
-
                         <div class="form-group" style="text-align:center">
                             <input type="string" style="text-align:center" name="phone" class="form-control"
                                 placeholder="Enter Your Phone number ">
@@ -45,7 +41,6 @@
                                 @enderror
                             </span>
                         </div>
-
                         <div class="form-group">
                             <label for="destination">Choose your Destination</label>
                             <select id="destination" name="destination">
@@ -60,15 +55,12 @@
                                 <option value="Nabatieh">Nabatieh</option>
                                 <option value="Baalbek">Baalbek</option>
                                 <option value="Batroun">Batroun</option>
-                                <option value="Zgharta-Ehden">Zgharta-Ehden</option>
-
-                            </select>
+                                <option value="Zgharta-Ehden">Zgharta-Ehden</option> </select>
                             <span style="color:red">
                                 @error('location')
                                     {{ $message }}
                                 @enderror
-                            </span>
-                        </div>
+                            </span></div>
                         <div class="form-group">
                             <label for="location">Choose your Location</label>
                             <select id="location" name="location">
@@ -84,7 +76,6 @@
                                 <option value="Baalbek">Baalbek</option>
                                 <option value="Batroun">Batroun</option>
                                 <option value="Zgharta-Ehden">Zgharta-Ehden</option>
-
                             </select>
                             <span style="color:red">
                                 @error('destination')
@@ -92,13 +83,6 @@
                                 @enderror
                             </span>
                         </div>
-
-
-
-
-
-
-
                         <div class="form-group">
                             <label for="gender">Your Gender:</label>
                             <select id="gender" name="gender">
@@ -112,28 +96,7 @@
                                 @enderror
                             </span>
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <input type="hidden" name="receiver" value="">
-
                         <div class="form-group">
                             <input type="submit" class="btn btn-success" value="Submit">
                         </div>

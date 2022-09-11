@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\driverController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\tripController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,3 +39,5 @@ Route::post('storeD',[driverController::class, 'storeD']);
 
 
 Route::get('/map', [HomeController::class, 'map']);
+Route::get('/trip',[tripController::class, 'show']);
+
