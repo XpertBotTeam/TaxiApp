@@ -62,10 +62,10 @@
                             <label for="car_model">Choose your car Model </label>
                             <select id="car_model" name="car_model">
                                 <option value=""></option>
-                                <option value="mercedes">Mercedes</option>
-                                <option value="bmw">BMW</option>
-                                <option value="kia">Kia</option>
-                                <option value="nissan">Nissan</option>
+                                <option value="MERCEDES">Mercedes</option>
+                                <option value="BMW">BMW</option>
+                                <option value="KIA">Kia</option>
+                                <option value="NISSAN">Nissan</option>
                             </select>
                             <span style="color:red">
                                 @error('car_model')
@@ -79,14 +79,14 @@
                             <label for="color">Choose your car color </label>
                             <select id="color" name="color">
                                 <option value=""></option>
-                                <option value="red">red</option>
-                                <option value="gray">gray</option>
-                                <option value="white">white</option>
-                                <option value="blue">blue</option>
-                                <option value="green">green</option>
-                                <option value="black">black</option>
-                                <option value="yellow">yellow</option>
-                                <option value="pink">pink</option>
+                                <option value="red">Red</option>
+                                <option value="gray">Gray</option>
+                                <option value="white">White</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                                <option value="black">Black</option>
+                                <option value="yellow">Yellow</option>
+                                <option value="pink">Pink</option>
                             </select>
                             <span style="color:red">
                                 @error('color')
@@ -95,7 +95,7 @@
                             </span>
                         </div>
 
-             
+
                         <div class="form-group">
                             <label for="location">Choose your Location</label>
                             <select id="location" name="location">
@@ -119,7 +119,7 @@
                                 @enderror
                             </span>
                         </div>
-                        
+
 
 
 
