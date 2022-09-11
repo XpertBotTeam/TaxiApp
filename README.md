@@ -37,9 +37,7 @@ Installation
 6. Sign in client/driver
 7. UnFinished Cases
 8. Finished Cases
-9. Qr Code 
-10. Map 
-
+9. map
 
 License
 ------------------
